@@ -92,6 +92,7 @@ main {
     padding: 50px 20px;
 }
 
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -160,12 +161,41 @@ p {
     height: auto;
 }
 
-.introSection h2 {
+.introSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    gap: 20px;
     width: 100%;
+    max-width: 1000px;
+}
+
+.introSection h2 {
     font-size: 32px;
-    text-align: center;
     color: #333;
     margin-bottom: 30px;
+}
+
+.introContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.introContent img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introContent p {
+    flex: 1;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .progSection {
@@ -275,4 +305,31 @@ p {
         margin-top: 20px;
         animation: slideInRight 1s ease-out;
     }
+
+    .progSection {
+        padding: 30px 10px;
+    }
+
+    .progCard {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .progSection h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .progCard h3 {
+        font-size: 20px;
+    }
+
+    .progCard p {
+        font-size: 14px;
+    }
+
+    .progCard span {
+        font-size: 16px;
+    }
+
 }
