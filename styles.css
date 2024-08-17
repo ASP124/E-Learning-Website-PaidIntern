@@ -168,7 +168,7 @@ p {
     padding: 50px 20px;
     gap: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .introSection h2 {
@@ -205,7 +205,7 @@ p {
     padding: 50px 20px;
     gap: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .progSection h2 {
@@ -217,7 +217,7 @@ p {
 }
 
 .progCard {
-    flex: 1 1 300px;
+    flex: 1 1 350px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -305,7 +305,25 @@ p {
         margin-top: 20px;
         animation: slideInRight 1s ease-out;
     }
+    .introContent {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .introContent img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .introContent p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .introSection h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
     .progSection {
         padding: 30px 10px;
     }
