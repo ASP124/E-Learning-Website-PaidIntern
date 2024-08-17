@@ -138,7 +138,7 @@ h1 {
     color: transparent;
 }
 
-h2 {
+.text h2 {
     font-size: 32px;
 }
 
@@ -160,7 +160,15 @@ p {
     height: auto;
 }
 
-.introSection {
+.introSection h2 {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.progSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -170,7 +178,7 @@ p {
     max-width: 1000px;
 }
 
-.introSection h2 {
+.progSection h2 {
     width: 100%;
     font-size: 32px;
     text-align: center;
@@ -178,7 +186,7 @@ p {
     margin-bottom: 30px;
 }
 
-.introCard {
+.progCard {
     flex: 1 1 300px;
     background-color: #fff;
     border-radius: 8px;
@@ -188,25 +196,25 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.introCard h3 {
+.progCard h3 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-.introCard p {
+.progCard p {
     font-size: 16px;
     color: #555;
     margin-bottom: 15px;
 }
 
-.introCard span {
+.progCard span {
     font-size: 18px;
     font-weight: bold;
     color: #9f75f8;
 }
 
-.introCard:hover {
+.progCard:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
