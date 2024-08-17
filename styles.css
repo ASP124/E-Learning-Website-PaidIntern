@@ -39,7 +39,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,17 +89,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
 }
 
-
-.hero {
+section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
+    padding: 80px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .textnbutton {
@@ -139,7 +144,7 @@ h1 {
     color: transparent;
 }
 
-.text h2 {
+h2 {
     font-size: 32px;
 }
 
@@ -162,25 +167,14 @@ p {
 }
 
 .introSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 20px;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.introSection h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
+    gap: 10px;
 }
 
 .introContent {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    margin-top: 30px;
 }
 
 .introContent img {
@@ -198,22 +192,17 @@ p {
     text-align: justify;
 }
 
-.progSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 20px;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
+.progSection h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
-.progSection h2 {
-    width: 100%;
-    font-size: 32px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .progCard {
@@ -228,13 +217,11 @@ p {
 
 .progCard h3 {
     font-size: 24px;
-    color: #333;
     margin-bottom: 10px;
 }
 
 .progCard p {
     font-size: 16px;
-    color: #555;
     margin-bottom: 15px;
 }
 
@@ -249,10 +236,37 @@ p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .textnbutton h1 {
+        font-size: 48px;
+    }
+
+    .textnbutton p {
+        font-size: 18px;
+    }
+
+    .progCard {
+        flex: 1 1 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .navbar-list {
@@ -276,6 +290,7 @@ p {
     }
 
     .search-box {
+        width: 100%;
         margin: 12px 0;
     }
 
@@ -286,60 +301,50 @@ p {
 
     .textnbutton {
         max-width: 100%;
-        padding-right: 0;
-        animation: slideInLeft 1s ease-out;
+        padding: 0 10px;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 40px;
         margin-bottom: 15px;
     }
-
     h2 {
         font-size: 30px;
     }
-
     .mainImg {
-        width: 100%;
+        width: 90%;
         max-width: 100%;
         margin-top: 20px;
-        animation: slideInRight 1s ease-out;
     }
+
     .introContent {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
     .introContent img {
-        max-width: 80%;
-        margin-bottom: 20px;
+        max-width: 90%;
+        margin-bottom: 15px;
     }
 
     .introContent p {
         font-size: 16px;
-        text-align: justify;
-    }
-
-    .introSection h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    .progSection {
-        padding: 30px 10px;
-    }
-
-    .progCard {
-        flex: 1 1 100%;
-        margin-bottom: 15px;
+        padding: 0 20px;
     }
 
     .progSection h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .cards {
+        margin-bottom: 15px;
+        padding: 30px 10px;
     }
 
     .progCard h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .progCard p {
@@ -349,5 +354,5 @@ p {
     .progCard span {
         font-size: 16px;
     }
-
 }
+
