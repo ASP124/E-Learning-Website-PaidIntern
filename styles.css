@@ -31,7 +31,9 @@
         background-position: 0% 0%;
     }
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -94,7 +96,7 @@ main {
 section {
     display: flex;
     width: 100%;
-    padding: 80px 0;
+    padding: 50px 0px 100px 0px;
 }
 
 .container {
@@ -144,8 +146,12 @@ h1 {
     color: transparent;
 }
 
-h2 {
+.textnbutton h2 {
     font-size: 32px;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 p {
@@ -194,7 +200,7 @@ p {
 
 .progSection h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
@@ -202,7 +208,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-top: 30px;
 }
 
 .progCard {
@@ -236,6 +243,117 @@ p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.gridlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.courseCards {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.courseCards:hover {
+    transform: translateY(-5px);
+}
+
+.courseCards figure {
+    margin: 0;
+    padding: 0;
+}
+
+.courseCards img {
+    width: 100%;
+    height: 240px;
+    display: block;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #f8c202;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.cardContent .h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.cardContent .card-title {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.cardContent .card-title:hover {
+    color: #007bff;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.star-icon {
+    margin-right: 5px;
+}
+
+.rating-star {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.rating-reviews {
+    font-size: 0.875rem;
+    color: #777;
+    margin-left: 5px;
+}
+
+.price {
+    display: block;
+    font-size: 1.25rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+.contentOverview {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.contentOverview li {
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+}
+
+.contentOverview li:first-child {
+    border-top: none;
+}
+.contentOverview span{
+    border-right: 1px solid black;
+    padding: 0 5px;
+}
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -264,6 +382,9 @@ p {
 }
 
 @media (max-width: 768px) {
+    section{
+        padding: 40px 0;
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -354,5 +475,42 @@ p {
     .progCard span {
         font-size: 16px;
     }
-}
+    .gridlist {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 
+    .courseCards img {
+        height: 210px;
+    }
+
+    .cardContent {
+        padding: 10px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .cardContent .h3 {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .contentOverview li {
+        padding: 5px 0;
+    }
+
+    .rating-star {
+        font-size: 0.9rem;
+    }
+
+    .rating-reviews {
+        font-size: 0.8rem;
+    }
+
+}
