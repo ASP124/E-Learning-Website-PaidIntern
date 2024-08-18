@@ -31,9 +31,11 @@
         background-position: 0% 0%;
     }
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -115,7 +117,7 @@ section {
     animation: slideInLeft 1s ease-out;
 }
 
-button {
+.courseButton {
     padding: 12px;
     font-size: 16px;
     background-color: rgb(207, 156, 255);
@@ -126,7 +128,7 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
+.courseButton:hover {
     transform: scale(1.1);
 }
 
@@ -154,7 +156,7 @@ h2 {
     font-size: 40px;
 }
 
-p {
+.textnbutton p {
     font-size: 20px;
     color: #555;
     line-height: 1.6;
@@ -208,7 +210,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* justify-content: center; */
     margin-top: 30px;
 }
 
@@ -229,6 +230,7 @@ p {
 
 .progCard p {
     font-size: 16px;
+    color: #555;
     margin-bottom: 15px;
 }
 
@@ -255,6 +257,7 @@ p {
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -286,7 +289,6 @@ p {
     font-size: 14px;
     border-radius: 4px;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .cardContent .h3 {
@@ -301,13 +303,12 @@ p {
 }
 
 .cardContent .card-title:hover {
-    color: #007bff;
+    color: #9f75f8;
 }
 
 .rating {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
 }
 
 .star-icon {
@@ -329,8 +330,8 @@ p {
 .price {
     display: block;
     font-size: 1.25rem;
-    color: #e74c3c;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
     padding: 0 5px;
 }
 
@@ -350,10 +351,135 @@ p {
 .contentOverview li:first-child {
     border-top: none;
 }
-.contentOverview span{
+
+.contentOverview span {
     border-right: 1px solid black;
     padding: 0 5px;
 }
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 0 5px 0;
+}
+
+.footergrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.footer-list {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-list h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #9f75f8;
+    text-transform: uppercase;
+}
+
+.logo1 {
+    max-width: 220px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.compBrief {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 12px;
+}
+
+.footer-list a {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.add {
+    line-height: 1.1;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    margin-bottom: 10px;
+}
+
+.footer-list ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list ul li a:hover {
+    color: #9f75f8;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subButton {
+    background-color: #a883f9;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.subButton:hover {
+    background-color: #9f75f8;
+}
+
+.social-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-list li {
+    list-style: none;
+}
+
+.social-list li a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -382,9 +508,10 @@ p {
 }
 
 @media (max-width: 768px) {
-    section{
+    section {
         padding: 40px 0;
     }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -429,9 +556,11 @@ p {
         font-size: 40px;
         margin-bottom: 15px;
     }
+
     h2 {
         font-size: 30px;
     }
+
     .mainImg {
         width: 90%;
         max-width: 100%;
@@ -475,6 +604,7 @@ p {
     .progCard span {
         font-size: 16px;
     }
+
     .gridlist {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -513,4 +643,55 @@ p {
         font-size: 0.8rem;
     }
 
+    .footergrid {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .footer-list {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-list h3 {
+        font-size: 16px;
+    }
+
+    .compBrief,
+    .footer-list a {
+        font-size: 14px;
+    }
+
+    .logo1 {
+        max-width: 150px;
+    }
+
+    .footer-list ul {
+        align-items: center;
+    }
+
+    .social-list {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .input-field {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .subButton {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    hr {
+        margin: 15px 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }
