@@ -302,6 +302,13 @@ h2 {
     transition: color 0.3s;
 }
 
+.card-description {
+    font-size: 14px;
+    font-weight: 100;
+    padding-right: 35px;
+    color: #666;
+}
+
 .cardContent .card-title:hover {
     color: #9f75f8;
 }
@@ -530,7 +537,6 @@ hr {
 
     .navbar-link {
         display: block;
-        width: 100%;
         text-align: left;
         padding: 15px;
         border-radius: 0;
@@ -612,10 +618,6 @@ hr {
 
     .courseCards img {
         height: 210px;
-    }
-
-    .cardContent {
-        padding: 10px;
     }
 
     .badge {
