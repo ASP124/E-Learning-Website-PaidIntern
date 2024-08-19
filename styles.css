@@ -524,16 +524,16 @@ hr {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.about-container h1 {
+.about-container h2 {
     color: #9f75f8;
-    font-size: 3em;
+    font-size: 40px;
     margin-bottom: 25px;
     letter-spacing: 1px;
 }
 
-.about-container h2 {
+.about-container h3 {
     color: #444;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     border-bottom: 3px solid #9f75f8;
     display: inline-block;
@@ -579,7 +579,7 @@ hr {
 /* Contact Section */
 .contact-section {
     background-color: #f7f7fb;
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     margin: 20px auto;
     max-width: 550px;
     border-radius: 12px;
@@ -592,21 +592,21 @@ hr {
 }
 
 .contact-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .contact-container h1 {
     color: #9f75f8;
-    font-size: 2.8em;
-    margin-bottom: 20px;
+    font-size: 2.2em;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .contact-container p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -616,13 +616,13 @@ form {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #333;
 }
 
@@ -642,21 +642,16 @@ textarea {
     min-height: 130px;
 }
 
-.form-group input:focus {
-    border-color: #a883f9;
-    outline: none;
-    box-shadow: 0 0 4px rgba(168, 131, 249, 0.5);
-}
-
+.form-group input:focus,
 .form-group textarea:focus {
     border-color: #a883f9;
     outline: none;
     box-shadow: 0 0 4px rgba(168, 131, 249, 0.5);
 }
 
-button {
+.sendButton {
     padding: 12px;
-    background-color: #9f75f8;
+    background-color: #a883f9;
     color: white;
     border: none;
     border-radius: 8px;
@@ -665,8 +660,8 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #8c6cf0;
+.sendButton:hover {
+    background-color: #9f75f8;
 }
 
 
@@ -924,4 +919,32 @@ button:hover {
         padding: 20px 10px;
         max-width: 350px;
     }
+    .contact-section {
+        padding: 12px;
+        max-width: 90%;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8em;
+    }
+
+    .contact-container p {
+        font-size: 0.9em;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
 }
