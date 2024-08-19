@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div class="container">
     <header>
         <h1>Java Programming Masterclass for Software Developers</h1>
         <p>Instructor: Michael Lee</p>
@@ -51,7 +51,30 @@
         </div>
         
     </section>
+</div>
     <a href="/courses.html" class="return-btn">Back to Courses</a>
+    <div id="form-container" class="form-container">
+        <form id="enroll-form">
+            <h2>Enroll in the Course</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -115,7 +115,95 @@ header p {
     background-color: #9f75f8;
 }
 
-/* Responsive Styles */
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #333;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-container input:focus {
+    border-color: #a883f9;
+    outline: none;
+    box-shadow: 0 0 4px rgba(168, 131, 249, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a883f9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #9f75f8;
+    transform: scale(1.02);
+}
+
+.form-container button:active {
+    background-color: #8a5df2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -152,6 +240,19 @@ header p {
         width: 100%;
         margin: 0 auto;
         padding: 5px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 1.2em;
+    }
+
+    .form-container button {
+        padding: 8px;
     }
 }
 
