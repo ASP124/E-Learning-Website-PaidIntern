@@ -100,6 +100,18 @@ body {
     color: #a883f9;
 }
 
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -725,28 +737,38 @@ textarea {
         align-items: center;
     }
 
-    .navbar-list {
+    .navbar-list,
+    .icons {
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
-    }
+        display: none; 
 
-    .navbar-item {
+    }
+    .navbar-link{
+        padding: 0px;
+    }
+    .navbar-item,
+    .icons a {
         margin: 0;
         width: 100%;
-    }
-
-    .navbar-link {
-        display: block;
+        padding: 14px;
         text-align: left;
-        padding: 15px;
-        border-radius: 0;
         border-bottom: 1px solid #9f75f8;
     }
 
-    .search-box {
-        width: 100%;
-        margin: 12px 0;
+    .icons {
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+        color: #333;
+    }
+
+    #menu-toggle:checked ~ .navbar-list,
+    #menu-toggle:checked ~ .icons {
+        display: flex; /* Show menu items when checkbox is checked */
     }
 
     .hero {
