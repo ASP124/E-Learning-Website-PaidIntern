@@ -82,11 +82,22 @@ body {
     color: #fff;
 }
 
-.search-box input[type="text"] {
-    padding: 7px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons a {
+    color: #333;
+    margin-right: 20px;
+    font-size: 1.35em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #a883f9;
 }
 
 main {
@@ -498,6 +509,75 @@ hr {
     font-size: 14px;
 }
 
+/* About Section Styles */
+.about-section {
+    background-color: #f7f7fb;
+    padding: 30px 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-container h1 {
+    color: #9f75f8;
+    font-size: 3em;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.about-container h2 {
+    color: #444;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #9f75f8;
+    display: inline-block;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.about-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.achievements-list,
+.offerings-list {
+    list-style-type: none;
+    max-width: 1100px;
+}
+
+.achievements-list li,
+.offerings-list li {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.achievements-list li::before,
+.offerings-list li::before {
+    content: "\2713";
+    color: #9f75f8;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    font-size: 1.5em;
+}
+
+
+
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -523,6 +603,28 @@ hr {
     .progCard {
         flex: 1 1 45%;
     }
+
+    .about-section {
+        padding: 25px 20px;
+    }
+
+    .about-container h1 {
+        font-size: 2.5em;
+    }
+
+    .about-container h2 {
+        font-size: 28px;
+    }
+
+    .about-container p {
+        font-size: 1.1em;
+    }
+
+    .achievements-list li,
+    .offerings-list li {
+        font-size: 1.1em;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -706,5 +808,27 @@ hr {
 
     .copyright {
         font-size: 12px;
+    }
+
+    .about-container h1 {
+        font-size: 2em;
+    }
+
+    .about-container h2 {
+        font-size: 24px;
+    }
+
+    .about-container p {
+        font-size: 1em;
+    }
+
+    .achievements-list li,
+    .offerings-list li {
+        font-size: 1em;
+    }
+
+    .about-section {
+        padding: 20px 10px;
+        max-width: 350px;
     }
 }
