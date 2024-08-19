@@ -160,23 +160,26 @@ header p {
     outline: none;
     box-shadow: 0 0 4px rgba(168, 131, 249, 0.5);
 }
+
 textarea {
-    width: 100%; 
+    width: 100%;
     max-width: 600px;
-    height: 120px; 
-    resize: none; 
+    height: 120px;
+    resize: none;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
     line-height: 1.5;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-textarea:focus{
+
+textarea:focus {
     border-color: #a883f9;
     outline: none;
     box-shadow: 0 0 4px rgba(168, 131, 249, 0.5);
 }
+
 .form-container button {
     width: 100%;
     padding: 12px;
