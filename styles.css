@@ -97,18 +97,15 @@ body {
 
 .navbar-item {
     margin: 0 15px;
-    /* font-size: 20px; */
 }
 
 .navbar-link {
     text-decoration: none;
     color: #000;
-    font-size: 25px;
+    font-size: 17px;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: 'Times New Roman', Times, serif;
-
 }
 
 .navbar-link:hover {
@@ -185,8 +182,6 @@ section {
 
 .courseButton:hover {
     transform: scale(1.1);
-    background-color: #9f75f8;
-    color: white;
 }
 
 h1 {
